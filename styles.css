@@ -1,2 +1,38 @@
-
 /* Your CSS Code here. */
+body {
+  background-color: #0b0c10;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.movie-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Movie Poster */
+.moviePic {
+  height: 400px;
+  width: 270px;
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.moviePic:hover {
+  opacity: 1;
+}
+
+/* Movie Description */
+.movieDetail {
+  position: relative;
+  top: 20px;
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}

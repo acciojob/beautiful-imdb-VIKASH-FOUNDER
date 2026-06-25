@@ -1,2 +1,58 @@
-
 /* Your CSS Code here. */
+/* Document baseline styles for an elevated cinematic look */
+body {
+    background-color: #0b0c10; /* Sleek dark theme suitable for movie detail pages */
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container spacing layout configuration */
+.movie-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+    position: relative; /* Acts as an anchor point for absolutely-positioned child items if needed */
+}
+
+/* Requirement 1: Movie Poster Styling
+  Uses required class selector: .moviePic
+  Mandatory properties applied: height, width, opacity
+*/
+.moviePic {
+    width: 300px;
+    height: 450px;
+    opacity: 0.9; /* Soft cinematic dimming */
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+
+/* Interactive extra touch: highlights poster opacity on mouse hover */
+.moviePic:hover {
+    opacity: 1.0;
+}
+
+/* Requirement 2: Movie Description Styling
+  Uses required class selector: .movieDetail
+  Mandatory properties applied: position, top, width, text-align, font-size
+*/
+.movieDetail {
+    position: relative; /* Sets element positioning layout flow */
+    top: 20px;          /* Displaces it below the poster card cleanly */
+    width: 80%;         /* Restricts the width scope relative to the parent view width */
+    text-align: center; /* Ensures content text alignment sits perfectly in the center horizontal line */
+    font-size: 18px;    /* Enhances readability */
+    
+    /* Extra styles for aesthetics */
+    margin: 0 auto;     /* Pairs with width: 80% to keep the block container centered horizontally */
+    line-height: 1.6;
+    color: #c5c6c7;     /* Clean, contrasting text shade */
+}
